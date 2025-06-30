@@ -40,8 +40,6 @@ while True:
 
         for track_id, box, class_id in zip(ids, boxes, class_ids):
             x1, y1, x2, y2 = box
-            cx = int((x1 + x2) / 2)
-            cy = int((y1 + y2) / 2)
             name = names[class_id]
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
             cvzone.putTextRect(frame, f'{name}', (x1, y1), 1, 1)
