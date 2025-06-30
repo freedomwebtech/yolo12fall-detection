@@ -53,20 +53,6 @@ while True:
                    cv2.rectangle(frame,(x1,y1),(x2,y2),(0,0,255),2)
 
           
-
-          
-
- 
-
-            
-
-    # Draw IN/OUT count and lines
-#    cvzone.putTextRect(frame, f'IN: {in_count}', (316, 33), scale=2, thickness=2,
-#                       colorT=(255, 255, 255), colorR=(0, 128, 0))
-#    cvzone.putTextRect(frame, f'OUT: {out_count}', (316, 100), scale=2, thickness=2,
-#                       colorT=(255, 255, 255), colorR=(0, 0, 255))
-
-
     # Show frame
     cv2.imshow("RGB", frame)
 
